@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+body { /* controling the button's positioning on the page */
+    font-family: system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#gameContainer { /* making sure the text for the button stays centered */
+    text-align: center;
+}
+#theBuzzer { /* styling for the button */
+    background-color: red;
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
