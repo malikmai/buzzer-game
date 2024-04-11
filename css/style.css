@@ -2,20 +2,21 @@
   box-sizing: border-box;
 }
 body {
-  /* controling the button's positioning on the page */
   font-family: system-ui, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0; 
+  padding: 0; 
+  background-color: white; 
 }
 
 #gameContainer {
-  /* making sure the text for the button stays centered */
   text-align: center;
 }
+
 #theBuzzer {
-  /* styling for the button */
   background-color: red;
   color: white;
   padding: 20px 40px;
@@ -23,4 +24,36 @@ body {
   border-radius: 10px;
   cursor: pointer;
   font-size: 20px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#theBuzzer:hover {
+  background-color: darkred; /* Hover effect for the button */
+}
+
+#cookieCounter {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+  color: black;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+  body {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    justify-content: space-around; /* Distribute space evenly */
+  }
+
+  #theBuzzer {
+    padding: 15px 30px; /* Smaller padding on mobile */
+    font-size: 18px; /* Slightly smaller font size for the button */
+  }
+
+  #cookieCounter {
+    top: 0;
+    right: 0;
+    font-size: 14px; /* Smaller font size for the counter */
+  }
 }

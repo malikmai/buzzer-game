@@ -22,3 +22,6 @@ added eventListeners for the clicking of the button so when pressed. A message i
 UPDATES:
 
 In JS, added variable "gamePlayed" and set it to false so the game starts as unplayed. Once the button is pressed, the eventListener listens for the "click' to display the gameMessage and toggles the gameState to played. Once the game state has been toggled, the user is asked if they would like to play again, resetting the game state to not played, creating an infinite loop to get cookies.
+
+Added a cookie counter to the site so the game keeps track of how many times the user has won a cookie. Updated the HTML, CSS and JS with a cookieCounter ID and stuck it to the top right of the screen. The counter will go on infinitly or at least until the user gets bored.
+I also added some extra CSS to make the website more mobile friendly. Before the site would scroll on mobile devices, now everything is on one level.
